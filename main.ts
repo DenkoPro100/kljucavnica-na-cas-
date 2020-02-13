@@ -27,7 +27,10 @@ input.onButtonPressed(Button.AB, function () {
         `)
 })
 input.onButtonPressed(Button.B, function () {
-    servos.P0.setAngle(90)
+    servos.P0.setAngle(0)
+    led.stopAnimation()
+    čas = 0
+    čakaj = 0
 })
 input.onButtonPressed(Button.A, function () {
     čas += 10000
